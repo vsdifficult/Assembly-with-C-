@@ -1,3 +1,5 @@
+[DllImport("kernel32.dll")]
+extern bool VirtualProtect(int* lpAddress, uint dwSize, uint flNewProtect, uint* lpflOldProtect);
 
 
 unsafe void* InvokeAsm(void* firstAsmArg, void* secondAsmArg, byte[] code) { 
