@@ -14,15 +14,4 @@ unsafe void* InvokeAsm(void* firstAsmArg, void* secondAsmArg, byte[] code) {
      return (void*)i;  
 }    
 
-// how use? 
 
-static void Main() { 
-     unsafe { 
-          InvokeAsm((void*)0, (void*)0, new SASMCode ( 
-          @"
-          YOUR ASM CODE
-          "
-          ).Code);  
-
-     } 
-}
